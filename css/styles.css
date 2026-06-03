@@ -1,210 +1,116 @@
-* {
-  box-sizing: border-box; /*ajusta al tamaño de la caja*/
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
-}
-/*comienzo de header*/
-header {
-  background-color: black;
-}
-#logos {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-#copa img {
-width: 100px;
-}
-#fifa img {
-width: 191px;
-}
-/*fin header*/
-/*comienzo de nav*/
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
-}
-
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
-}
-
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
-}
-  .activo{
-    /*border-bottom: #555 solid 3px;*/
-    box-shadow: 5px 4px darkgray ;
-  }
-  nav a:hover{
-background-color: red;
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Mundial 2026</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" href="css/styles.css" />
+   <script type="module" src="script.js"></script>
+ </head>
 
 
-  }
+ <body>
+   <header></header>
 
-  /*fin de nav*/
-  /*comienzo de main*/
-  section{
-    width: 900px;
-    height: 400px;
-    background-color: #555;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  } 
 
-   section div{
-    width: 250px;
-    background-color: yellow;
-    height: 200px;
-    margin: 1px;
-    }
-  #intro {
-    background-image: url(https://wallpapers.com/images/featured/cielo-estrellado-de-noche-2hiv3l2x5a6ymf5o.jpg);
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    box-shadow: 15px 15px #2e2b2b4d;
-    border-radius: 15px;
-  }
+   <header>
+     <div id="logos">
+       <div id="fifa">
+         <img
+           src="https://digitalhub.fifa.com/transform/befe3a64-328b-453c-8b58-0faeb9103684/FIFA_Logo_White_Generic?&io=transform:fill&quality=75"
+           alt="fifa"
+         />
+       </div>
+       <div id="copa">
+         <img
+           src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill,height:210&quality=75"
+           alt="copa"
+         />
+       </div>
+     </div>
+   </header>
+   <nav>
+     <a href="index.html" class="activo">FIFA</a>
+     <a href="campeones.html">Campeones</a>
+     <a href="selecciones.html">Selecciones</a>
+     <a href="estadios.html">Estadios</a>
+     <a href="entradas.html">Entradas</a>
+   </nav>
 
-  #eeuu {
-    background-image: url(../img/eeuu.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  #mx {
-    background-image: url(../img/mexico.png);
-    background-size: cover;
-    background-repeat: no-repeat;}
-  #can {
-    background-image: url(../img/canada.png);
-    background-size: cover;
-    background-repeat: no-repeat;}
-/*videos*/
-#video {
-  width: 600px;
-  height: 300px;
-}
-/*presentacion*/
-#presentacion {
-  height: 600px;
-}
-.videos_locales{
-  background-color: #555;
-  width: 600px;
-  border: #000 solid 7px;
-  box-shadow: #555 5px 2px;
-  text-align: center;
-  margin: 5px auto;
-}
-  /*fin de main*/
-  /*pagina estadios*/
-  .Canada h2{
-    text-align: center;
-  }
-  table,tr, td,th {
-    border: solid red 2px;
-    border-collapse: collapse;
-    width: 400px;
-    margin: 0 auto;
-  }
-tr :hover{
-  background-color: #555;
-}
-  td img{
-    width: 200px;
-  }
-  .mexico h2{
-    text-align: center;
-  }
-  table,tr, td,th {
-    border: solid rgb(0, 4, 255) 2px;
-    border-collapse: collapse;
-    width: 400px;
-    margin: 0 auto;
-  }
-tr :hover{
-  background-color: #555;
-}
-  td img{
-    width: 200px;
-  }
-  .estadosunidos h2{
-    text-align: center;
-  }
-  table,tr, td,th {
-    border: solid rgb(0, 17, 255) 2px;
-    border-collapse: collapse;
-    width: 400px;
-    margin: 0 auto;
-  }
-tr :hover{
-  background-color: #555;
-}
-  td img{
-    width: 200px;
-  }
-  
-/*comienzo de footer*/
 
-footer {
-  background-color: black;
-  color: white;
-  font-size: smaller;
-  display: flex; /*muestra el completo ajustes*/
-  flex-wrap: wrap;
-  /*align-items: center;
-  justify-content: center;*/
-  justify-content: space-evenly;
-}
-#colegio {
-  width: 33%;
-  background-color: red;
-  padding: 5px;
-}
-footer a { color: #aaa;
-}
+   <main>
+     <section id="intro">
+<div id= "eeuu">
+</div>
+<div id="mx">
+</div>
+<div id="can">
+</div>
+     </section>
+      
+     <section>
+<div id="video">
+<iframe iframe width="100%" height="100%" src="https://www.youtube.com/embed/RDtdVQgB9ME" title="es OFICIAL! Nueva Intro para la Copa del Mundo 2026 | +HD 60fps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+</div>
+     </section>
+     <section id="presentacion">
+       <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8JmnCZ6vnZAjx9hyG92ztU_QolyB7IQS9Sd8srAYYZWxLK9OU5vvK8lxeoM8-eFt9xvBvYA-DnDD8/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+     </section>
+<audio controls>
+  <source src="audio/freesound_community-retro-audio-logo-94648 (1).mp3">
+</audio>
+<video controls>
+  <source src="video/The Official FIFA World Cup 26™ Theme (12).mp4">
+</video>
 
-#alumno {
-  width: 33%;
-  background-color: yellow;
-  color: #555;
-  padding: 5px;
-}
-#sociales {
-  width: 33%;
-  background-color: lightblue;
-  padding: 5px;}
-#sociales img {
-  width: 50px;}
-/*fin de footer*/
-#main {
-  padding: 1rem;
-}
+   </main>
+   <footer>
+     <div id="colegio">
+       <h3>colegio</h3>
+       <p>
+         <a
+           href="https://www.stmary.edu.ar/es/como-llegar-pilar-sede-pilar"
+           target="_blank"
+         >
+           saint mary of the hills</a
+         >
+       </p>
+       <p>direccion: Av. Marquez selaya pilar</p>
+     </div>
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;}
+
+     <div id="alumno">
+       <h3>alumno:</h3>
+       <p><a href="mailto:alu.pediconis@stmary.edu.ar"> Sofia Pediconi</a></p>
+       <h3>curso</h3>
+       <p>2S</p>
+     </div>
+
+
+     <div id="sociales">
+       <a href="https://www.instagram.com/" target="_blank">
+         <img
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1280px-Instagram_logo_2022.svg.png"
+           alt="instagram"
+       /></a>
+       <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+         <img
+           src="https://img.utdstc.com/icon/a9b/fd4/a9bfd4b72b31d50a92d9e6286f4c83933f619db17b4e5582a3322402b4c54ee8:200"
+           alt="facebook"
+       /></a>
+       <a href="https://www.tiktok.com/es-419/" target="_blank">
+         <img
+           src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png"
+           alt="tik tok"
+         />
+       </a>
+       <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+         <img
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/500px-WhatsApp.svg.png"
+           alt="whatsapp"
+         />
+       </a>
+     </div>
+   </footer>
+ </body>
+</html>
