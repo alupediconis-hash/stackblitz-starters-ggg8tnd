@@ -125,7 +125,9 @@ section div{
   border: #000 solid 7px;
   box-shadow: #555 5px 2px;
   text-align: center;
-  margin:0 auto
+  margin:0 auto;
+  box-sizing: border-box;
+  
  }
  
 /*fin de main*/
