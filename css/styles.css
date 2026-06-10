@@ -58,7 +58,7 @@ nav a[aria-current='page'] {
   box-shadow: 5px 4px darkgray;
 }
 nav a:hover{
-background-color: rgba(155, 242, 222, 0.5);
+background-color: rgba(242, 155, 155, 0.5);
 }
 /*fin de nav*/
 /*comienzo de main*/
@@ -94,9 +94,10 @@ section div{
   background-image: url(../img/eeuu.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #mx{
-  background-image: url(../img/mx.png);
+  background-image: url(../img/mex.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,7 +122,8 @@ section div{
 }
  .videos_locales{
   background-color: #555;
-  width: 600px;
+  width: 630px;
+  height: 320px;
   border: #000 solid 7px;
   box-shadow: #555 5px 2px;
   text-align: center;
@@ -142,7 +144,7 @@ section div{
 text-align: center;
 }
 table, tr, td,th{
-  border: double rgba(100, 194, 225, 0.637) 5px;
+  border: double rgba(100, 123, 225, 0.637) 5px;
   border-collapse:collapse;
   width: 400px;
   margin: 0 auto;
