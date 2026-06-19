@@ -127,13 +127,14 @@ section div {
   height: 600px;
 }
 .videos_locales{
-  background-color: #555;
+  background-color: #525252;
   width: 600px;
   border: #000 solid 7px;
   box-shadow: #555 5px 2px;
   text-align: center;
   margin:0 auto
 }
+
 
 /*fin de main*/
 /*pagina estadios*/
