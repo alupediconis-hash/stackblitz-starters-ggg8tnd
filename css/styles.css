@@ -281,3 +281,8 @@ h1 {
   min-height: 80px;
   font-size: 11px;
 }
+/*datos campeones*/
+.paises .foto img {
+  width: 100%;
+
+}
